@@ -1,0 +1,10 @@
+---
+- hosts: CentOs
+  remote_user: root
+  vars:
+   testpath: "{{ tpath }}"
+  tasks:
+   - name: directory creation
+     file:
+       path: /etc/{{ testpath }}
+       state: directory
