@@ -9,5 +9,5 @@
   tasks:
    - name: directory creation
      file:
-       path: /home/sp00552206/{{ testpath }}
+       path: /etc/{{ testpath }}
        state: directory
