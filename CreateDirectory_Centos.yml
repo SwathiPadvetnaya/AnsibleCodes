@@ -8,3 +8,6 @@
      file:
        path: /etc/{{ testpath }}
        state: directory
+    - name: print statement
+      debug:
+        msg: "Directory has been created in /etc/{{ testpath }}"
