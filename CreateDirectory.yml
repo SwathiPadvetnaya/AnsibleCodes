@@ -1,8 +1,8 @@
 ---
 - hosts: ubuntu
-  user: sp00552206@autoai.com
-  sudo: yes
-  #become_user: sp00552206@autoai.com
+  #user: sp00552206@autoai.com
+  become: yes
+  become_user: sp00552206@autoai.com
   #become_method: sudo
   vars:
    testpath: "{{ tpath }}"
