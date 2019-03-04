@@ -1,6 +1,9 @@
 ---
-- hosts: CentOs
-  remote_user: root
+- hosts: ubuntu
+  #user: sp00552206@autoai.com
+  #sudo: yes
+  #become_user: sp00552206@autoai.com
+  #become_method: sudo
   vars:
    testpath: "{{ tpath }}"
   tasks:
